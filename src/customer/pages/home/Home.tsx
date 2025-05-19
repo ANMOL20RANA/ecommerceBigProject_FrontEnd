@@ -2,6 +2,8 @@ import React from 'react';
 import ElectricCategory from './electricCategory/ElectricCategory';
 import CategoryGrid from './categoryGrid/CategoryGrid'
 import Deal from './deal/Deal';
+import {Button} from '@mui/material';
+import {Storefront} from '@mui/icons-material';
 import ShopByCategory from './shopByCategory/ShopByCategory';
 const Home = ()=>{
 
@@ -17,16 +19,27 @@ const Home = ()=>{
                     <Deal/>
                 </div>
                
-                <section className='pt-20'>
+                <section className='py-20 '>
                     <h1 className='text-lg lg:text-4xl font-bold text-primary-color pb-5 lg:pb-20 text-center'>
                         SHOP BY CATEGORY
                     </h1>
                     <ShopByCategory/>
                 </section>
 
-                <section className='pg:px-20 relative h-[200px] lg:h-[450px] object-cover'>
-                    <img className='w-full h-full' src='https://www.w3schools.com/w3images/jane.jpg' alt=''/>
+                <section className=' pg:px-20 relative h-[200px] lg:h-[450px] object-cover'>
+                    <img className='w-full h-full' src='https://i.pinimg.com/736x/bd/27/75/bd27754e9a093178051852dd9e03ee1d.jpg' alt=''/>
 
+                    <div className='absolute top-1/2 left-4 lg:left-[15rem] 
+                    transform-translate-y-1/2 font-semibold lg:text-4xl space-y-3'>
+                        <h1>Sell your Product</h1>
+                        <p className='text-lg md:text-2xl'>With <span className='logo'>Hell Bazzar</span></p>
+                        <div className='pt-6 flex justify-center'>
+                            <Button startIcon={<Storefront/>} variant='contained' size='large'>
+                                Become Seller
+                            </Button>
+                        </div>
+
+                    </div>
                 </section>
                 
 
